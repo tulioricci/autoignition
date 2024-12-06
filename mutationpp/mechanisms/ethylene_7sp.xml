@@ -1,23 +1,23 @@
 <!--
 7 species - 3 reactions UIUC ethylene mechanism
 -->
-<mechanism name="uiuc_7sp">
+<mechanism name="ethylene_7sp">
 
     <!-- using cal and not kcal -->
     <arrhenius_units A="mol,cm,s,K" E="cal,mol,K" />
 
     <!-- reaction 1 -->
-    <reaction formula="C2H4+O2=2CO+H2">
+    <reaction formula="C2H4+O2=2CO+2H2">
         <arrhenius A="1.0E+10" n="0.0" T="36000.0" />
     </reaction>
 
     <!-- reaction 2 -->
-    <reaction formula="CO+0.5O2=CO2">
+    <reaction formula="2CO+O2=2CO2">
         <arrhenius A="1.1e+07" n="0.7" T="11000." />
     </reaction>
 
     <!-- reaction 3: need to modify the orders -->
-    <reaction formula="H2+0.5O2=H2O">
+    <reaction formula="2H2+O2=2H2O">
         <arrhenius A="7.0e+08" n="0.0" T="12000.0" />
     </reaction>
 
